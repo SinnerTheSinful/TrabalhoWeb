@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastrar nova entrada</title>
+        <link rel="stylesheet" href="./CSS/cadastro.css">
+    </head>
+        <body>
+            <div id="navbar">
+                <nav>
+                    <a class="navlink" href="./index.html">Home</a> <span style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">|</span> <a class="navlink" href="./form_cadastro.html">Cadastrar</a>
+                </nav>
+            </div>
+            <div id="main_container">
+                <h1 id="titulo">Cadastrar nova entrada</h1>
+                <form id="formulario">
+                    <div class="div_form">
+                        <div id="left_side">
+                            <label for="titulo" class="form_label">Título do projeto:</label>
+                            <input class="form_text" type="text" id="titulo" name="nome_do_projeto">
+                            <label for="tipo" class="form_label">Tipo de atividade:</label>
+                            <select id="tipo" value="Tipo">
+                                <option value="Iniciacao">Iniciação à Docencia, Pesquisa e/ou Extenção</option>
+                                <option value="evento">Evento</option>
+                                <option value="arte">Atividade Cultural ou Esportiva</option>
+                                <option value="producao">Produção Técnica ou Científica</option>
+                                <option value="gestao">Vivência da Gestão</option>
+                                <option value="formacao">Atividade Ligada à Formação Proficional</option>
+                                <option selected="selected" value="outro">Outro</option>
+                            </select>
+                            <label class="form_label" for="imagem">Imagem:</label>
+                            <input type="file" name="imagem" id="img">
+                        </div>
+                        <div id="right_side">
+                            <label for="descricao" class="form_label">Descrição:</label>
+                            <textarea class="form_text" id="descricao" placeholder="Descreva brevemente seu projeto"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" id="submit" class="form_button" name="Enviar" value="Enviar">
+                </form>
+            </div>
+        </body>
+</html>
